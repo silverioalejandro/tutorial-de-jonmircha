@@ -9,6 +9,7 @@
 <body>
     <h1>Tipos de Datos</h1>
     <h4>Primitivos: Se accede directamente al valor.</h4>
+    <small>Nota: Const (No cambia), Let (Si cambia)</small>
     <ul>
         <li>string</li>
         <li>number</li>
@@ -19,6 +20,7 @@
     </ul>
 
     <h4>Compuestos: Se accede a la referencia del valor.</h4>
+    <small>Nota: Independientemente cambia, pero se recomienda declararla como "Const" </small>
     <ul>
         <li>object = {}</li>
         <li>array = []</li>
@@ -27,8 +29,33 @@
         <li>etc.</li>
     </ul>
     <script>
-        var hola ="Hola Mundo"
+        var hola ="Hola Mundo" 
         console.log(hola);
+        
+        let a;
+        const PI = 3.1416;
+        //const NUEVE;
+        console.log(PI);
+        //PI = 3.15;
+
+        a = "kenai";
+        console.log(a);
+
+        const objeto = {
+            nombre: "Silverio",
+            edad:15
+        }
+
+        const colores = ["blanco", "negro", "azul"];
+
+        console.log(objeto);
+        console.log(colores);
+
+        objeto.correo = "silverioserranoj@gmail.com";
+        colores.push("verde");
+
+        console.log(objeto);
+        console.log(colores);
     </script>
 </body>
 </html>

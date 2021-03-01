@@ -44,12 +44,7 @@
         <li>includes("Palabra a buscar") = Busca en la cadena de texto.</li>
         <li>split("Palabra a buscar") = Genera un array con la palabra a buscar</li>
     </ol>
-
-    <section>
-        <h4>Concatenar</h4>
-        <input type="text" id="valueName">
-    </section>
-
+    
     <script>
         // var hola ="Hola Mundo" 
         // console.log(hola);
@@ -83,7 +78,7 @@
 
         //Concatenación
         // const valueName = "silverio" + " " + "Alejandro";
-        
+
         //Interpolación de variables
         //Template String
         const firstName = "Silverio Alejandro";
@@ -92,8 +87,31 @@
         const fullName = `Mi nombre completo es: ${firstName} ${lastName}`;
         console.log(fullName);
 
+        //Numbers
+    //<ol>
+        //<li>console.log(variable.toFixed()) = Redondea al entero más próximo</li>
+        //<li>console.log(parseFloat()) = Si encuentra un carácter diferente al signo (+ o -), numerales (0-9), un punto decimal o un exponente, devuelve el valor hasta ese punto</li>
+        //<li>console.log(Number.parseFloat()) = Si encuentra un carácter diferente al signo (+ o -), numerales (0-9), un punto decimal o un exponente, devuelve el valor hasta ese punto</li>
+        //<li>console.log(parseInt()) = Pone números decimales según diga el número entero</li>
+        //<li>console.log(Number.parseInt()) = Pone números decimales según diga el número entero</li>
+        //<li>console.log(typeof variable)= Indica el tipo de variable</li>
+    //</ol>
 
+        let a = 2;
+        let b = new Number(1);
+        let c = 7.19;
+        let d = "5.6";
+
+        console.log(a,b);
+        console.log(c.toFixed(1));
+        console.log(c.toFixed(5));
+        console.log(parseInt(c));
+        console.log(parseFloat(c));
+        console.log(typeof c, typeof d);
+        console.log(a + b);
+        console.log(c + parseInt(d));
+        console.log(c + parseFloat(d));
+        console.log(c + Number.parseInt(d));
+        console.log(c + Number.parseFloat(d));
 
     </script>
-</body>
-</html>

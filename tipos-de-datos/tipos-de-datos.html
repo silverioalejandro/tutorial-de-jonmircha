@@ -229,4 +229,57 @@
             console.log(`<li id="${index}">${el}</li>`)
         });
 
+        let a = new String("hola");
+        //console.log(a)
+
+        const b = {}
+        console.log(b);
+
+        const c = new Object();
+        console.log(c);
+
+        // dentro de un objeto a las variables se le van a llamar atributos/propiedades y a las funciones se les llama métodos 
+        const silverio = {
+            nombre: "silverio",
+            apellido: "Serrano",
+            edad: 16,
+            pasatiempos: ["Correr","Hacer ejercicio","Ver clases"],
+            soltero: true,
+            contacto: {
+                email: "silverioserranoj@gamil.com",
+                instagram: "alejandro",
+                movil: "0506512165"
+            },
+            saludar: function (){
+                console.log(`hola :)`)
+            },
+            decirMiNombre: function (){
+                console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.instagram} en instagram.`)
+            }
+        }
+
+        console.log(silverio);
+        console.log(silverio["nombre"]);
+        console.log(silverio["apellido"]);
+        console.log(silverio.nombre);
+        console.log(silverio.apellido);
+        console.log(silverio.edad);
+        console.log(silverio.soltero);
+        console.log(silverio.pasatiempos);
+        console.log(silverio.pasatiempos[1]);
+        console.log(silverio.contacto);
+        console.log(silverio.contacto.instagram);
+        silverio.saludar();
+        silverio.decirMiNombre();
+
+        //Permite listar todas las llaves.
+        console.log(Object.keys(silverio));
+
+        //Pemite listar los valores
+        console.log(Object.values(silverio));
+
+        //Evalua si el nombre de propiedad que se le ha pasado se encuentra dentro de una de las llaves de ese objeto (true o false) 
+        console.log(silverio.hasOwnProperty("nombre"));
+        console.log(silverio.hasOwnProperty("nacimiento"));
+
     </script>

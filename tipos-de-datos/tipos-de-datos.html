@@ -73,214 +73,214 @@
 
         // console.log(objeto);
         // console.log(colores);
-        const name = "Silverio Alejandro Serrano Jimémez";
-        console.log(name.split("il"));
+    //     const name = "Silverio Alejandro Serrano Jimémez";
+    //     console.log(name.split("il"));
 
-        //Concatenación
-        // const valueName = "silverio" + " " + "Alejandro";
+    //     //Concatenación
+    //     // const valueName = "silverio" + " " + "Alejandro";
 
-        //Interpolación de variables
-        //Template String
-        const firstName = "Silverio Alejandro";
-        const lastName = "Serrano Jiménez";
+    //     //Interpolación de variables
+    //     //Template String
+    //     const firstName = "Silverio Alejandro";
+    //     const lastName = "Serrano Jiménez";
 
-        const fullName = `Mi nombre completo es: ${firstName} ${lastName}`;
-        console.log(fullName);
+    //     const fullName = `Mi nombre completo es: ${firstName} ${lastName}`;
+    //     console.log(fullName);
 
-        //Numbers
-    //<ol>
-        //<li>console.log(variable.toFixed()) = Redondea al entero más próximo</li>
-        //<li>console.log(parseFloat()) = Si encuentra un carácter diferente al signo (+ o -), numerales (0-9), un punto decimal o un exponente, devuelve el valor hasta ese punto</li>
-        //<li>console.log(Number.parseFloat()) = Si encuentra un carácter diferente al signo (+ o -), numerales (0-9), un punto decimal o un exponente, devuelve el valor hasta ese punto</li>
-        //<li>console.log(parseInt()) = Pone números decimales según diga el número entero</li>
-        //<li>console.log(Number.parseInt()) = Pone números decimales según diga el número entero</li>
-        //<li>console.log(typeof variable)= Indica el tipo de variable</li>
-    //</ol>
+    //     //Numbers
+    // //<ol>
+    //     //<li>console.log(variable.toFixed()) = Redondea al entero más próximo</li>
+    //     //<li>console.log(parseFloat()) = Si encuentra un carácter diferente al signo (+ o -), numerales (0-9), un punto decimal o un exponente, devuelve el valor hasta ese punto</li>
+    //     //<li>console.log(Number.parseFloat()) = Si encuentra un carácter diferente al signo (+ o -), numerales (0-9), un punto decimal o un exponente, devuelve el valor hasta ese punto</li>
+    //     //<li>console.log(parseInt()) = Pone números decimales según diga el número entero</li>
+    //     //<li>console.log(Number.parseInt()) = Pone números decimales según diga el número entero</li>
+    //     //<li>console.log(typeof variable)= Indica el tipo de variable</li>
+    // //</ol>
 
-        let a = 2;
-        let b = new Number(1);
-        let c = 7.19;
-        let d = "5.6";
+    //     let a = 2;
+    //     let b = new Number(1);
+    //     let c = 7.19;
+    //     let d = "5.6";
 
-        console.log(a,b);
-        console.log(c.toFixed(1));
-        console.log(c.toFixed(5));
-        console.log(parseInt(c));
-        console.log(parseFloat(c));
-        console.log(typeof c, typeof d);
-        console.log(a + b);
-        console.log(c + parseInt(d));
-        console.log(c + parseFloat(d));
-        console.log(c + Number.parseInt(d));
-        console.log(c + Number.parseFloat(d));
+    //     console.log(a,b);
+    //     console.log(c.toFixed(1));
+    //     console.log(c.toFixed(5));
+    //     console.log(parseInt(c));
+    //     console.log(parseFloat(c));
+    //     console.log(typeof c, typeof d);
+    //     console.log(a + b);
+    //     console.log(c + parseInt(d));
+    //     console.log(c + parseFloat(d));
+    //     console.log(c + Number.parseInt(d));
+    //     console.log(c + Number.parseFloat(d));
 
-        //Booleans 
-        //Boolean = define si la variable, el objeto o la cadena es "true" o "false"
-        let verdadero = true;
-        let falso = false;
-        let v = Boolean(true);
-        let f = Boolean(false);
+    //     //Booleans 
+    //     //Boolean = define si la variable, el objeto o la cadena es "true" o "false"
+    //     let verdadero = true;
+    //     let falso = false;
+    //     let v = Boolean(true);
+    //     let f = Boolean(false);
 
-        console.log(verdadero, falso, v, f);
-        console.log(typeof verdadero, typeof falso);
-        console.log(Boolean(0));
-        console.log(Boolean(-7));
-        console.log(Boolean(""));
-        console.log(Boolean(" "));
+    //     console.log(verdadero, falso, v, f);
+    //     console.log(typeof verdadero, typeof falso);
+    //     console.log(Boolean(0));
+    //     console.log(Boolean(-7));
+    //     console.log(Boolean(""));
+    //     console.log(Boolean(" "));
 
-        //Diferencia entre "undefined", "null", "NaN"
-        //undefined significa que no se ha inicializado una variable y que el valor esta ausente
-        let indefinida;
-        console.log(indefinida);
+    //     //Diferencia entre "undefined", "null", "NaN"
+    //     //undefined significa que no se ha inicializado una variable y que el valor esta ausente
+    //     let indefinida;
+    //     console.log(indefinida);
 
-        //null es un valor, que indica la ausencia de un valor
-        let nulo = null;
-        console.log(null);
+    //     //null es un valor, que indica la ausencia de un valor
+    //     let nulo = null;
+    //     console.log(null);
 
-        //NaN - Not a Number
-        let noEsUnNumero = "hola" * 3.7;
-        console.log(noEsUnNumero);
+    //     //NaN - Not a Number
+    //     let noEsUnNumero = "hola" * 3.7;
+    //     console.log(noEsUnNumero);
 
-        //Declaración de Función
-        function estoEsUnaFuncion(){
-            console.log("Uno");
-            console.log("Dos");
-            console.log("Tres");
-        }
+    //     //Declaración de Función
+    //     function estoEsUnaFuncion(){
+    //         console.log("Uno");
+    //         console.log("Dos");
+    //         console.log("Tres");
+    //     }
 
-        //Invocación de una Función
-        // estoEsUnaFuncion();
-        // estoEsUnaFuncion();
-        // estoEsUnaFuncion();
-        // estoEsUnaFuncion();
+    //     //Invocación de una Función
+    //     // estoEsUnaFuncion();
+    //     // estoEsUnaFuncion();
+    //     // estoEsUnaFuncion();
+    //     // estoEsUnaFuncion();
 
-        function unaFuncionQueDevuelveValor(){
-            console.log("Uno");
-            return 19;
-            console.log("Dos");
-            console.log("Tres");
-            return "La función ha retornado una Cadena de texto";   
-        }
+    //     function unaFuncionQueDevuelveValor(){
+    //         console.log("Uno");
+    //         return 19;
+    //         console.log("Dos");
+    //         console.log("Tres");
+    //         return "La función ha retornado una Cadena de texto";   
+    //     }
 
-        //let valorDeFuncion = unaFuncionQueDevuelveValor();
+    //     //let valorDeFuncion = unaFuncionQueDevuelveValor();
 
-        //console.log(valorDeFuncion);
+    //     //console.log(valorDeFuncion);
 
-        function saludar(nombre = "Desconocido",edad = 0){
-            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
-        }
+    //     function saludar(nombre = "Desconocido",edad = 0){
+    //         console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+    //     }
 
-        //saludar("silverio",16);
-        //saludar();
+    //     //saludar("silverio",16);
+    //     //saludar();
 
-        //Funciones declaradas vs funciones expresadas
+    //     //Funciones declaradas vs funciones expresadas
 
-        funcionDeclarada();
+    //     funcionDeclarada();
 
-        function funcionDeclarada(){
-            console.log("Esto es una función declarada, puede invocarse en cualquier parte de nuestro código, incluso antes de que la función sea declarada");
-        }
+    //     function funcionDeclarada(){
+    //         console.log("Esto es una función declarada, puede invocarse en cualquier parte de nuestro código, incluso antes de que la función sea declarada");
+    //     }
 
-        funcionDeclarada();
+    //     funcionDeclarada();
 
-        //funcionExpresada();
+    //     //funcionExpresada();
 
-        //Función anónima
-        const funcionExpresada = function (){
-            console.log("Esto es una función expresada, es decir, una función que se le ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dira...")
-        }
+    //     //Función anónima
+    //     const funcionExpresada = function (){
+    //         console.log("Esto es una función expresada, es decir, una función que se le ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dira...")
+    //     }
 
-        funcionExpresada();
+    //     funcionExpresada();
 
-        const a = [];
-        const b = [1, true, "hola", ["A", "B", "C", [1, 2, 3]]];
+    //     const a = [];
+    //     const b = [1, true, "hola", ["A", "B", "C", [1, 2, 3]]];
 
-        console.log(a);
-        console.log(b);
-        console.log(b.length);
-        console.log(b[2]);
-        console.log(b[0]);
-        console.log(b[3]);
-        console.log(b[3][2]);
-        console.log(b[3][3][0]);
+    //     console.log(a);
+    //     console.log(b);
+    //     console.log(b.length);
+    //     console.log(b[2]);
+    //     console.log(b[0]);
+    //     console.log(b[3]);
+    //     console.log(b[3][2]);
+    //     console.log(b[3][3][0]);
 
-        const c = Array.of("X", "Y", "Z", 9, 8, 7);
-        console.log(c);
+    //     const c = Array.of("X", "Y", "Z", 9, 8, 7);
+    //     console.log(c);
 
-        const d = Array(100).fill(false);
-        console.log(d);
+    //     const d = Array(100).fill(false);
+    //     console.log(d);
 
-        const e = new Array();
-        console.log(e);
+    //     const e = new Array();
+    //     console.log(e);
 
-        const f = new Array(1, 2, 3, true, false);
-        console.log(f);
+    //     const f = new Array(1, 2, 3, true, false);
+    //     console.log(f);
 
-        const colores = ["Rojo", "Verde", "Azul"];
-        console.log(colores);
+    //     const colores = ["Rojo", "Verde", "Azul"];
+    //     console.log(colores);
 
-        colores.push("Negro");
-        console.log(colores);
+    //     colores.push("Negro");
+    //     console.log(colores);
 
-        colores.pop();
-        console.log(colores);
+    //     colores.pop();
+    //     console.log(colores);
 
-        colores.forEach(function (el, index) {
-            console.log(`<li id="${index}">${el}</li>`)
-        });
+    //     colores.forEach(function (el, index) {
+    //         console.log(`<li id="${index}">${el}</li>`)
+    //     });
 
-        let a = new String("hola");
-        //console.log(a)
+    //     let a = new String("hola");
+    //     //console.log(a)
 
-        const b = {}
-        console.log(b);
+    //     const b = {}
+    //     console.log(b);
 
-        const c = new Object();
-        console.log(c);
+    //     const c = new Object();
+    //     console.log(c);
 
-        // dentro de un objeto a las variables se le van a llamar atributos/propiedades y a las funciones se les llama métodos 
-        const silverio = {
-            nombre: "silverio",
-            apellido: "Serrano",
-            edad: 16,
-            pasatiempos: ["Correr","Hacer ejercicio","Ver clases"],
-            soltero: true,
-            contacto: {
-                email: "silverioserranoj@gamil.com",
-                instagram: "alejandro",
-                movil: "0506512165"
-            },
-            saludar: function (){
-                console.log(`hola :)`)
-            },
-            decirMiNombre: function (){
-                console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.instagram} en instagram.`)
-            }
-        }
+    //     // dentro de un objeto a las variables se le van a llamar atributos/propiedades y a las funciones se les llama métodos 
+    //     const silverio = {
+    //         nombre: "silverio",
+    //         apellido: "Serrano",
+    //         edad: 16,
+    //         pasatiempos: ["Correr","Hacer ejercicio","Ver clases"],
+    //         soltero: true,
+    //         contacto: {
+    //             email: "silverioserranoj@gamil.com",
+    //             instagram: "alejandro",
+    //             movil: "0506512165"
+    //         },
+    //         saludar: function (){
+    //             console.log(`hola :)`)
+    //         },
+    //         decirMiNombre: function (){
+    //             console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.instagram} en instagram.`)
+    //         }
+    //     }
 
-        console.log(silverio);
-        console.log(silverio["nombre"]);
-        console.log(silverio["apellido"]);
-        console.log(silverio.nombre);
-        console.log(silverio.apellido);
-        console.log(silverio.edad);
-        console.log(silverio.soltero);
-        console.log(silverio.pasatiempos);
-        console.log(silverio.pasatiempos[1]);
-        console.log(silverio.contacto);
-        console.log(silverio.contacto.instagram);
-        silverio.saludar();q
-        silverio.decirMiNombre();
+    //     console.log(silverio);
+    //     console.log(silverio["nombre"]);
+    //     console.log(silverio["apellido"]);
+    //     console.log(silverio.nombre);
+    //     console.log(silverio.apellido);
+    //     console.log(silverio.edad);
+    //     console.log(silverio.soltero);
+    //     console.log(silverio.pasatiempos);
+    //     console.log(silverio.pasatiempos[1]);
+    //     console.log(silverio.contacto);
+    //     console.log(silverio.contacto.instagram);
+    //     silverio.saludar();q
+    //     silverio.decirMiNombre();
 
-        //Permite listar todas las llaves.
-        console.log(Object.keys(silverio));
+    //     //Permite listar todas las llaves.
+    //     console.log(Object.keys(silverio));
 
-        //Pemite listar los valores
-        console.log(Object.values(silverio));
+    //     //Pemite listar los valores
+    //     console.log(Object.values(silverio));
 
-        //Evalua si el nombre de propiedad que se le ha pasado se encuentra dentro de una de las llaves de ese objeto (true o false) 
-        console.log(silverio.hasOwnProperty("nombre"));
-        console.log(silverio.hasOwnProperty("nacimiento"));
+    //     //Evalua si el nombre de propiedad que se le ha pasado se encuentra dentro de una de las llaves de ese objeto (true o false) 
+    //     console.log(silverio.hasOwnProperty("nombre"));
+    //     console.log(silverio.hasOwnProperty("nacimiento"));
         
         //Opceradores
         //Aritmeticos
@@ -336,10 +336,110 @@
         || Or : Cuando tengo 2 o mán condiciones, con que una se cumpla, es decir sea verdadera, el OR sera verdadero 
         && And : Cuando tengo 2 o mán condiciones, todas tienen que cumplimpirse, es decir ser verdaderas, para que ADN se valide */
 
-        console.log(!true);
+        /*console.log(!true);
         console.log(!false);
         console.log((9 === 9) || ("9" === 9));
-        console.log((9 === 9) && ("9" === "9"));
-        
+        console.log((9 === 9) && ("9" === "9"));*/
+
+        /* if - else */
+
+        let edad = 19;
+
+        if ( edad > 16) {
+            console.log("Eres mayor de Edad");
+        } else {
+            console.log("Eres menor de Edad");
+        }
+
+        if ( edad >= 17) {
+            console.log("Eres mayor de Edad");
+        } else {
+            console.log("Eres menor de Edad");
+        }
+
+        if ( edad < 17) {
+            console.log("Eres mayor de Edad");
+        } else {
+            console.log("Eres menor de Edad");
+        }
+
+        if ( edad <= 16) {
+            console.log("Eres mayor de Edad");
+        } else {
+            console.log("Eres menor de Edad");
+        }
+
+        /* if - else if - else*/
+        /*
+        Déjame Dormir - 0hrs - 5hrs 
+        Buenos dias 6hrs -11hrs
+        Buenos tardes 12hrs - 18hrs
+        Buenas noches 19hrs - 23hrs
+        */
+       let hora = 23;
+       if(hora >= 0 && hora <= 5){
+           console.log("Déjame dormir");
+       } else if(hora >= 6 && hora <= 11) {
+        console.log("Buenos días");
+       } else if(hora >= 12 && hora <= 18){
+        console.log("Buenos tardes");
+       } else {
+        console.log("Buenos noches");
+       }
+
+       if(hora < 6){
+           console.log("Déjame dormir");
+       } else if(hora > 5 && hora < 12) {
+        console.log("Buenos días");
+       } else if(hora > 11 && hora < 19){
+        console.log("Buenos tardes");
+       } else {
+        console.log("Buenos noches");
+       }
+
+       /*Operador Ternario (condición)? verdadero: falsa*/
+       console.log("Operador Ternario");
+       let eresMayor = (edad >= 18)? "Eres mayor de Edad":
+       "Eres menor de Edad";
+       console.log(eresMayor);
+
+       /*switch - case*/
+       /*
+       domingo -0
+       lunes -1
+       martes -2
+       miércoles -3
+       jueves -4
+       viernes -5
+       sabado -6
+       */
+      let dia = 2;
+
+      switch (dia) {
+          case 0:
+              console.log("Domingo");
+              break;
+          case 1:
+              console.log("Lunes");
+              break;
+          case 2:
+              console.log("Martes");
+              break;
+          case 3:
+              console.log("Miércoles");
+              break;
+          case 4:
+              console.log("Jueves");
+              break;
+          case 5:
+              console.log("Viernes");
+              break;
+          case 6:
+              console.log("Sabado");
+              break;           
+          default:
+          console.log("El dia no existe");
+              break;
+      }
 
     </script>

@@ -343,103 +343,158 @@
 
         /* if - else */
 
-        let edad = 19;
+    //     let edad = 19;
 
-        if ( edad > 16) {
-            console.log("Eres mayor de Edad");
-        } else {
-            console.log("Eres menor de Edad");
-        }
+    //     if ( edad > 16) {
+    //         console.log("Eres mayor de Edad");
+    //     } else {
+    //         console.log("Eres menor de Edad");
+    //     }
 
-        if ( edad >= 17) {
-            console.log("Eres mayor de Edad");
-        } else {
-            console.log("Eres menor de Edad");
-        }
+    //     if ( edad >= 17) {
+    //         console.log("Eres mayor de Edad");
+    //     } else {
+    //         console.log("Eres menor de Edad");
+    //     }
 
-        if ( edad < 17) {
-            console.log("Eres mayor de Edad");
-        } else {
-            console.log("Eres menor de Edad");
-        }
+    //     if ( edad < 17) {
+    //         console.log("Eres mayor de Edad");
+    //     } else {
+    //         console.log("Eres menor de Edad");
+    //     }
 
-        if ( edad <= 16) {
-            console.log("Eres mayor de Edad");
-        } else {
-            console.log("Eres menor de Edad");
-        }
+    //     if ( edad <= 16) {
+    //         console.log("Eres mayor de Edad");
+    //     } else {
+    //         console.log("Eres menor de Edad");
+    //     }
 
-        /* if - else if - else*/
-        /*
-        Déjame Dormir - 0hrs - 5hrs 
-        Buenos dias 6hrs -11hrs
-        Buenos tardes 12hrs - 18hrs
-        Buenas noches 19hrs - 23hrs
-        */
-       let hora = 23;
-       if(hora >= 0 && hora <= 5){
-           console.log("Déjame dormir");
-       } else if(hora >= 6 && hora <= 11) {
-        console.log("Buenos días");
-       } else if(hora >= 12 && hora <= 18){
-        console.log("Buenos tardes");
-       } else {
-        console.log("Buenos noches");
-       }
+    //     /* if - else if - else*/
+    //     /*
+    //     Déjame Dormir - 0hrs - 5hrs 
+    //     Buenos dias 6hrs -11hrs
+    //     Buenos tardes 12hrs - 18hrs
+    //     Buenas noches 19hrs - 23hrs
+    //     */
+    //    let hora = 23;
+    //    if(hora >= 0 && hora <= 5){
+    //        console.log("Déjame dormir");
+    //    } else if(hora >= 6 && hora <= 11) {
+    //     console.log("Buenos días");
+    //    } else if(hora >= 12 && hora <= 18){
+    //     console.log("Buenos tardes");
+    //    } else {
+    //     console.log("Buenos noches");
+    //    }
 
-       if(hora < 6){
-           console.log("Déjame dormir");
-       } else if(hora > 5 && hora < 12) {
-        console.log("Buenos días");
-       } else if(hora > 11 && hora < 19){
-        console.log("Buenos tardes");
-       } else {
-        console.log("Buenos noches");
-       }
+    //    if(hora < 6){
+    //        console.log("Déjame dormir");
+    //    } else if(hora > 5 && hora < 12) {
+    //     console.log("Buenos días");
+    //    } else if(hora > 11 && hora < 19){
+    //     console.log("Buenos tardes");
+    //    } else {
+    //     console.log("Buenos noches");
+    //    }
 
-       /*Operador Ternario (condición)? verdadero: falsa*/
-       console.log("Operador Ternario");
-       let eresMayor = (edad >= 18)? "Eres mayor de Edad":
-       "Eres menor de Edad";
-       console.log(eresMayor);
+    //    /*Operador Ternario (condición)? verdadero: falsa*/
+    //    console.log("Operador Ternario");
+    //    let eresMayor = (edad >= 18)? "Eres mayor de Edad":
+    //    "Eres menor de Edad";
+    //    console.log(eresMayor);
 
-       /*switch - case*/
-       /*
-       domingo -0
-       lunes -1
-       martes -2
-       miércoles -3
-       jueves -4
-       viernes -5
-       sabado -6
-       */
-      let dia = 2;
+    //    /*switch - case*/
+    //    /*
+    //    domingo -0
+    //    lunes -1
+    //    martes -2
+    //    miércoles -3
+    //    jueves -4
+    //    viernes -5
+    //    sabado -6
+    //    */
+    //   let dia = 2;
 
-      switch (dia) {
-          case 0:
-              console.log("Domingo");
-              break;
-          case 1:
-              console.log("Lunes");
-              break;
-          case 2:
-              console.log("Martes");
-              break;
-          case 3:
-              console.log("Miércoles");
-              break;
-          case 4:
-              console.log("Jueves");
-              break;
-          case 5:
-              console.log("Viernes");
-              break;
-          case 6:
-              console.log("Sabado");
-              break;           
-          default:
-          console.log("El dia no existe");
-              break;
-      }
+    //   switch (dia) {
+    //       case 0:
+    //           console.log("Domingo");
+    //           break;
+    //       case 1:
+    //           console.log("Lunes");
+    //           break;
+    //       case 2:
+    //           console.log("Martes");
+    //           break;
+    //       case 3:
+    //           console.log("Miércoles");
+    //           break;
+    //       case 4:
+    //           console.log("Jueves");
+    //           break;
+    //       case 5:
+    //           console.log("Viernes");
+    //           break;
+    //       case 6:
+    //           console.log("Sabado");
+    //           break;           
+    //       default:
+    //       console.log("El dia no existe");
+    //           break;
+    //   }
+
+
+
+
+
+
+    /*let contador = 0;
+
+    while (contador < 10) {
+        console.log("while " + contador);
+        contador++;
+    }
+    
+
+    do{
+        console.log("do while " + contador);
+        contador++;
+    }while(contador < 10);
+    */
+
+    /*for (inicialización de variable; condición; decremento o incremento) {
+        sentencia que ejecuta el for
+        sentencia que ejecuta el for
+        sentencia que ejecuta el for
+    }*/
+
+    for (let i = 0; i < 10; i++) {
+        console.log("for " + i);
+    }
+
+    let numeros = [10,20,30,40,50,60,70,80,90,100];
+
+    for (let i = 0; i < numeros.length; i++) {
+        console.log(numeros[i]);
+    }
+
+const silverio = {
+    nombre: "Silverio",
+    apellido: "Serrano",
+    edad: 15
+}
+
+    for (const propiedad in silverio) {
+        console.log(`Key: ${propiedad}, Value: ${silverio[propiedad]}`);
+    }
+
+    for (const elemento of numeros) {
+        console.log(elemento);
+    }
+
+    let cadena = "Hola Mundo";
+
+    for (const caracter of cadena) {
+        console.log(caracter);
+    }
 
     </script>

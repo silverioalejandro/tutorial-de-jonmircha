@@ -700,7 +700,28 @@ const silverio = {
 
     }
 
-    const snoopy = new Animal("Snoopy", "Macho"),
+
+    //Herencia Prototípica
+    function Perro(nombre, genero, tamanio) {
+        this.super = Animal;
+        this.super(nombre, genero);
+        this.tamanio = tamanio;
+    }
+
+    //Perro está heredando de Animal
+    Perro.prototype = new Animal();
+    Perro.prototype.constructor = Perro;
+
+    //Sobreescritura de métodos de Prototipo padre en el hijo
+    Perro.prototype.sonar = function () {
+        console.log("Soy un perro y mi sonido es un ladrido");
+    }
+
+    Perro.prototype.ladrar = function () {
+        console.log("Guauuu Guauuu!!!");
+    }
+
+    const snoopy = new Perro("Snoopy", "Macho", "Mediano"),
      lolaBunny = new Animal("Lola Bunny", "Hembra");
 
      console.log(snoopy);
@@ -708,6 +729,7 @@ const silverio = {
 
      snoopy.sonar();
      snoopy.saludar();
+     snoopy.ladrar();
 
      lolaBunny.sonar();
      lolaBunny.saludar();

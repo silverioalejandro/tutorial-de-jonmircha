@@ -589,11 +589,11 @@ const silverio = {
     console.log(dog);
     dog.ladrar();*/
 
-    function sumar (a, b, ...c) {
+    /*function sumar (a, b, ...c) {
         let resultado = a + b;
 
         c.forEach(function (n){
-            resultado + = n
+            resultado += n
         });
 
         return resultado;
@@ -613,6 +613,51 @@ const silverio = {
      console.log(arr1, arr2);
 
      const arr3 = [...arr1, ...arr2];
-     console.log(arr3);
+     console.log(arr3);*/
+
+
+     //function saludar = () => console.log(`Hola`);
+     //saludar();
+
+     const saludar = (nombre) => console.log(`Hola ${nombre}`);
+     saludar("Silverio");
+
+     //const sumar = function (a, b) {
+        //return a + b;
+     //}
+
+     const sumar = (a, b) => a + b;
+
+     console.log(sumar(8, 9));
+
+     const funcionDeVariasLineas = () => {
+         console.log("Uno");
+         console.log("Dos");
+         console.log("Tres");
+     }
+
+     funcionDeVariasLineas();
+
+     const numeros = [1, 2, 3, 4, 5];
+
+     numeros.forEach((el, index) => console.log(`${el} esta en la posición ${index}`));
+
+
+    //  function Perro() {
+    //      console.log(this);
+    //  } 
+
+    //  Perro();
+
+    const perro = {
+        nombre: "Kenai",
+        ladrar() {
+            console.log(this)
+        }
+    }
+
+    perro.ladrar();
+
+
 
     </script>

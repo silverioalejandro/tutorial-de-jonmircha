@@ -683,7 +683,7 @@ const silverio = {
     // console.log(animal2);
 
 
-    //Función constructora donde asignamos los métodos al Prototipo, no a la función como tal
+    /*//Función constructora donde asignamos los métodos al Prototipo, no a la función como tal
     function Animal (nombre, genero) {
     //Atributos
         this.nombre = nombre;
@@ -732,7 +732,54 @@ const silverio = {
      snoopy.ladrar();
 
      lolaBunny.sonar();
-     lolaBunny.saludar();
+     lolaBunny.saludar();*/
 
+     
+     class Animal {
+         //al comienzo de un metodo especial que se ejecuta en el momento de instanciar la clase
+     constructor(nombre, genero){
+         this.nombre = nombre;
+         this.genero = genero;
+     }
+    } {
+
+    //Metodos
+        sonar = function () {
+            console.log("Hago sonidos porque estoy vivo");
+        }
+
+        saludar = function () {
+            console.log(`Hola me llamo ${this.nombre}`);
+        }
+
+        class Perro extends Animal {
+            constructor(nombre, genero, tamanio) {
+                //con el metodo super() se manda a llamar el constructor se la clase padre
+                super(nombre, genero);
+                this.tamanio = tamanio;
+            }
+            sonar() {
+                console.log("Soy un perro y mi sonido es un ladrido");
+            }
+
+            ladrar() {
+                console.log("Guauuu Guauuu!!!");
+            }
+        }
+
+        const mimi = new Animal("Mimi", "Hembra"),
+         scooby = new Animal("Scooby", "Macho", "Gigante");
+
+         console.log(mimi);
+         mimi.saludar();
+         mimi.sonar();
+         console.log(scooby);
+         scooby.saludar();
+         scooby.sonar();
+         scooby.ladrar();
+         
+
+
+    }
 
     </script>

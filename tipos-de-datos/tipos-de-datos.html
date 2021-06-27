@@ -757,6 +757,7 @@ const silverio = {
                 //con el metodo super() se manda a llamar el constructor se la clase padre
                 super(nombre, genero);
                 this.tamanio = tamanio;
+                this.raza = null;
             }
             sonar() {
                 console.log("Soy un perro y mi sonido es un ladrido");
@@ -765,10 +766,27 @@ const silverio = {
             ladrar() {
                 console.log("Guauuu Guauuu!!!");
             }
+
+
+            //un método estático se pueden ejecutar sin necesidad de instanciar la clase.
+            static queEres() {
+                console.log("los perros somos animales mamíferos que pertenecemos a la familia de caninos. Somos considerados los mejores amigos del hombre.");
+            }
+
+            //Los setters y getters son métodos especiales que nos permiten establecer y obtener los valores de atributos de nuestra clase.
+            get getRaza() {
+                return this.raza:
+            }
+            
+            set setRaza(raza) {
+                this.raza = raza;
+            }
         }
+        
+        Perro.queEres();
 
         const mimi = new Animal("Mimi", "Hembra"),
-         scooby = new Animal("Scooby", "Macho", "Gigante");
+         scooby = new Perro("Scooby", "Macho", "Gigante");
 
          console.log(mimi);
          mimi.saludar();
@@ -777,9 +795,22 @@ const silverio = {
          scooby.saludar();
          scooby.sonar();
          scooby.ladrar();
+         console.log(scooby.getRaza);
+         scooby.setRaza = "Grán Danés";
+         console.log(scooby.getRaza);
+
+         
          
 
 
-    }
+
+
+
+
+
+    
+
+
+
 
     </script>
